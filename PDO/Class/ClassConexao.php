@@ -1,9 +1,9 @@
 <?php 
 
-class ClassConexao
+abstract class ClassConexao
 {
     // REALIZARÁ A CONEXÃO COM O BANCO DE DADOS
-    public function connectDB()
+    protected function connectDB()
     {
         try {
             $conn = new PDO("mysql:host=localhost;dbname=crud","root","");
