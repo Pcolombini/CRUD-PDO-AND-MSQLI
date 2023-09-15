@@ -7,10 +7,6 @@
     <?php include 'Class/ClassConexao.php' ;?>
 </head>
 <body>
-    <?php 
-        $connect = new ClassConexao();
-        var_dump($connect->connectDB());
-        
-    ?>
+
 </body>
 </html>
