@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class ClassCrud extends ClassConexao
 {
@@ -9,7 +9,7 @@ class ClassCrud extends ClassConexao
     private function preparedStatements($query, $tipos, $parametros)
     {
         $this->countParametros($parametros);
-        
+
         $conn = $this->connectDB();
         $this->crud = $conn->prepare($query);
 
@@ -24,8 +24,7 @@ class ClassCrud extends ClassConexao
             }
 
             array_unshift($callParametros, $tipos);
-            call_user_func_array(array($this->crud, 'bind_param'),$callParametros);
-            
+            call_user_func_array(array($this->crud, 'bind_param'), $callParametros);
         }
 
         $this->crud->execute();
@@ -36,4 +35,12 @@ class ClassCrud extends ClassConexao
     {
         $this->contador = count($parametros);
     }
+
+    // MÉTODO DE INSERÇÃO
+    public function insertDB($tabela, $condicao, $tipos, $parametros)
+    {
+        $this->preparedStatements("insert into {$tabela} values ({$condicao})", $tipos, $parametros);
+        return $this->crud;
+    }
+
 }

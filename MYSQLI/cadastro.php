@@ -1,17 +1,14 @@
 <?php include_once 'includes/Header.php'; ?>
 
 <div class="content">
-    <?php
-    include 'Class/ClassConexao.php';
-    include 'Class/ClassCrud.php';
-    ?>
+
     <div class="resultado">
 
     </div>
     <div class="formulario">
 
         <h1 class="center">Cadastro</h1>
-        <form name="fomrCadastro" id="fomrCadastro" method="post" action="controller/ControllerCadastro.php">
+        <form name="formCadastro" id="formCadastro" method="post" action="controller/ControllerCadastro.php">
             <div class="formularioInput">
 
                 <div class="formularioInput">
@@ -22,7 +19,11 @@
 
                 <div class="formularioInput">
                     Sexo:<br>
-                    <input type="text" name="sexo" id="sexo">
+                    <select name="sexo" id="sexo">
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
                 </div>
 
 

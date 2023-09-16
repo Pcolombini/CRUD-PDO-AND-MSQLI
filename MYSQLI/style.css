@@ -13,6 +13,8 @@
     --button-cadastro: rgb(73, 240, 73);
     --button-delete: rgba(236, 75, 75, 0.753);
     --color-font: #fff;
+    --border-color:#00ff0d;
+    --background-resultado:#d8ffd5;
 
 }
 
@@ -100,7 +102,10 @@
 .resultado {
     float: left;
     width: 70%;
-    height: 100PX;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    background-color: var(--background-resultado);
     margin: 20px 15% 8px 15%;
     display: none;
 }
