@@ -11,7 +11,7 @@
         <img src="images/572552750819-crud-php.jpg" alt="banner com o nome crud">
     </div>
     <div class="nav">
-        <li><a href="cadastro">Cadastro</a></li>
+        <li><a href="http://127.0.0.1/CRUD-PDO-AND-MSQLI/PDO/cadastro.php">Cadastro</a></li>
         <li><a href="selecao">Seleção</a></li>
         <li><a href="delete">Delete</a></li>
         <li><a href="atualizacao">Atualização</a></li>
