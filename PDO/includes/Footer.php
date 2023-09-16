@@ -1,5 +1,5 @@
-<script src="../includes/zeptojs.com_zepto.min.js"></script>
-<script src="../javascript.js"></script>
+<script src="./Includes/zepto.min.js"></script>
+<script src="Javascript.min.js"></script>
 </body>
 
 </html>

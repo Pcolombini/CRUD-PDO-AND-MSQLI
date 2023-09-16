@@ -10,7 +10,7 @@
 
 <body>
     <div class="banner">
-        <a href="http://127.0.0.1/CRUD-PDO-AND-MSQLI/PDO/"><img src="images/572552750819-crud-php.jpg" alt="banner com o nome crud"></a>
+        <a href="http://127.0.0.1/CRUD-PDO-AND-MSQLI/PDO/"><img src="images/cCRUD (1).png" alt="banner com o nome crud"></a>
     </div>
     <div class="nav">
         <li><a href="http://127.0.0.1/CRUD-PDO-AND-MSQLI/PDO/cadastro.php">Cadastro</a></li>
